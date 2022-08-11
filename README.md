@@ -1,7 +1,7 @@
 Game Type: Ratscrew
-https://imgur.com/1PIHDox
-![alt text](https://imgur.com/1PIHDox"
-[Imgur](https://i.imgur.com/1PIHDox.pnggit)
+
+![alt text]https://imgur.com/1PIHDox
+
 Rules - 
 
 - 52 decks of cards
