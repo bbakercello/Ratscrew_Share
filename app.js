@@ -305,7 +305,7 @@ slapButton.addEventListener('click', event => {
         roundStatus.innerText = "Good slap! You win this pile"
         showPoints()
       }
-      if(match === false)
+      else if(match === false){
         console.log('lose cards');
         playerYHand.push(centerPile);
         shuffleDeck(playerYHand);
@@ -316,22 +316,23 @@ slapButton.addEventListener('click', event => {
         showPoints()
         currentPlayer = "playerY"
         timerFunction()
+      }
     })
   /* Set up timer for computer to slap after 3 seconds */
-if (match === true) {
-    setTimeout(function(){
-        computerSlap ();
-    }, 3000);}
+// if (match === true) {
+//     setTimeout(function(){
+//         computerSlap ();
+//     }, 3000);}
 
-    function computerSlap (){
-    roundStatus.innerText = `Computer Slapped!You lose ${centerPile.length} cards`
-        playerYHand.push(centerPile);
-        shuffleDeck(playerYHand);
-        centerDeck.style.backgroundImage = "";
-        showPoints()
-        currentPlayer = 'playerX'
-        windCondition()
-}
+//     function computerSlap (){
+//     roundStatus.innerText = `Computer Slapped!You lose ${centerPile.length} cards`
+//         playerYHand.push(centerPile);
+//         shuffleDeck(playerYHand);
+//         centerDeck.style.backgroundImage = "";
+//         showPoints()
+//         currentPlayer = 'playerX'
+//         windCondition()
+// }
   function windCondition(){
   if(playerXHand.length === 52){
     console.log('You win!')
