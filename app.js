@@ -127,58 +127,64 @@ function draw(playerHand){
                 }console.log(currentPlayer)
             if(currentPlayer === "playerX"){
                 roundStatus.innerText = ""
-                currentPlayerDom.innerText = `You drew a ${centerPile[centerPile.length-1].identity.charAt(2)}`
+                if((centerPile[centerPile.length-1].identity.charAt(2))=== "1"){
+                    currentPlayerDom.innerText = "You drew a 10"
+                }
+                else {
+                    currentPlayerDom.innerText = `You drew a ${centerPile[centerPile.length-1].identity.charAt(2)}`
+                }
+
                 if((centerPile[centerPile.length-1].identity.charAt(2))=== 'A'){
                     console.log('playerX got an ACE')
                     currentPlayerDom.innerText = "Nice! You drew an ACE. Computer loses 4 cards"
                     let xi = 0
-                    while(xi<5){
+                    while(xi<3){
                         centerPile.unshift(playerYHand.pop())
                         console.log(playerYHand);
                         windCondition()
                         xi += 1;
                     }
                  }
-
                 if((centerPile[centerPile.length-1].identity.charAt(2))=== 'K'){
                     console.log('playerX got a King')
                     currentPlayerDom.innerText = "You drew a King! Computer loses 3 cards"
                     let xi = 0
-                    while(xi<4){
+                    while(xi<2){
                         centerPile.unshift(playerYHand.pop())
                         console.log(playerYHand);
                         windCondition()
                         xi += 1;
                     }
-             }
-             if((centerPile[centerPile.length-1].identity.charAt(2))=== 'Q'){
-                console.log('playerX got a Queen')
-                currentPlayerDom.innerText = "You drew an Queen. Computer loses 2 cards"
-                let xi = 0
-                while(xi<3){
-                    centerPile.unshift(playerYHand.pop())
-                    console.log(playerYHand);
-                    windCondition()
-                    xi += 1;
                 }
-         }
-         if((centerPile[centerPile.length-1].identity.charAt(2))=== 'J'){
-            console.log('playerX got a Jack')
-            currentPlayerDom.innerText = "You drew an Jack. Computer loses a card"
-            let xi = 0
-            while(xi<2){
-                centerPile.push(playerYHand.pop())
-                console.log(playerYHand);
-                xi += 1;
-            }
-            }
-     }
-     cardImage()
-     showPoints()
-     windCondition()
-     timerFunction ()
- } } 
-    console.log(playerXHand,playerYHand)
+                if((centerPile[centerPile.length-1].identity.charAt(2))=== 'Q'){
+                    console.log('playerX got a Queen')
+                    currentPlayerDom.innerText = "You drew an Queen. Computer loses 2 cards"
+                    let xi = 0
+                    while(xi<1){
+                        centerPile.unshift(playerYHand.pop())
+                        console.log(playerYHand);
+                        windCondition()
+                        xi += 1;
+                    }
+                }
+                if((centerPile[centerPile.length-1].identity.charAt(2))=== 'J'){
+                    console.log('playerX got a Jack')
+                    currentPlayerDom.innerText = "You drew an Jack. Computer loses a card"
+                    let xi = 0
+                    while(xi=0){
+                        centerPile.push(playerYHand.pop())
+                        console.log(playerYHand);
+                        xi += 1;
+                    }
+                 }
+        }     
+    } 
+    cardImage()
+    showPoints()
+    windCondition()
+    timerFunction ()
+} 
+console.log(playerXHand,playerYHand)
     
     
 if(centerPile.length = 0){
@@ -226,12 +232,17 @@ function timerFunction(){
         currentPlayer = "playerY"
         draw(playerYHand)
         if(currentPlayer === "playerY"){
-            currentPlayerDom.innerText = `The computer drew a ${centerPile[centerPile.length-1].identity.charAt(2)}`
+            if((centerPile[centerPile.length-1].identity.charAt(2))=== "1"){
+                currentPlayerDom.innerText = "You drew a 10"
+            }
+            else {
+                currentPlayerDom.innerText = `The computer drew a ${centerPile[centerPile.length-1].identity.charAt(2)}`
+            }
             if((centerPile[centerPile.length-1].identity.charAt(2))=== 'A'){
                 currentPlayerDom.innerText = "Uh oh! Computer drew an ACE. You lose 4 cards"
                 console.log('playerY got a ACE')
                 let xi = 0
-                while(xi<5){
+                while(xi<3){
                     console.log('playerY got a ACE')
                     centerPile.unshift(playerXHand.pop())
                     console.log(playerXHand);
@@ -242,7 +253,7 @@ function timerFunction(){
                 console.log('playerY got a King')
                 currentPlayerDom.innerText = "Wow! Computer drew a King. You lose 3 cards"
                 let xi = 0
-                while (xi<4){
+                while (xi<2){
                     console.log('playerY got a King')
                     centerPile.unshift(playerXHand.pop())
                     cardImage()
@@ -254,7 +265,7 @@ function timerFunction(){
                 console.log('playerY got a Queen')
                 currentPlayerDom.innerText = "Wow! Computer drew a Queen. You lose 2 cards"
                 let xi = 0
-                while(xi<3){
+                while(xi<1){
                     console.log('playerY got a Queen')
                     centerPile.unshift(playerXHand.pop())
                     console.log(playerXHand);
@@ -265,7 +276,7 @@ function timerFunction(){
                 console.log('playerY got a Jack')
                 currentPlayerDom.innerText = "Computer drew a Jack. You lose 1 cards"
                 let xi = 0
-                while(xi<2){
+                while(xi=0){
                     console.log('playerY got a Jack')
                     centerPile.unshift(playerXHand.pop())
                     console.log(playerXHand);
@@ -282,36 +293,7 @@ function timerFunction(){
     }
 }
 
-/* Set up timer for computer to slap after 3 seconds */
-let clicks = 3
-let interval2 
 
-if (match === true) {
-    computerSlap()
-}
-    function computerSlap (){
-    clearInterval(interval2);
-    interval2 = setInterval(slapTimer, 700);
-    }
-
-function slapTimer(){
-    clicks--
-    console.log(clicks)
-    if(clicks === 0){
-        clearInterval(interval2);
-        console.log('lose cards');
-        roundStatus.innerText = `Computer Slapped!You lose ${centerPile.length} cards`
-        playerYHand.push(centerPile);
-        shuffleDeck(playerYHand);
-        console.log(playerYHand)
-        console.log(playerXHand)
-        centerDeck.style.backgroundImage = "";
-        showPoints()
-        currentPlayer = 'playerX'
-        windCondition()
-    }
-                
-}
 /* Assign space bar to check identities and determine if cards are won or lost*/
 slapButton.addEventListener('click', event => {
     // if (event.code === 'Space') {
@@ -332,9 +314,24 @@ slapButton.addEventListener('click', event => {
         centerDeck.style.backgroundImage = "";
         roundStatus.innerText = "Bad Slap... You lose this pile"
         showPoints()
-    }
-  )
+        currentPlayer = "playerY"
+        timerFunction()
+    })
+  /* Set up timer for computer to slap after 3 seconds */
+if (match === true) {
+    setTimeout(function(){
+        computerSlap ();
+    }, 3000);}
 
+    function computerSlap (){
+    roundStatus.innerText = `Computer Slapped!You lose ${centerPile.length} cards`
+        playerYHand.push(centerPile);
+        shuffleDeck(playerYHand);
+        centerDeck.style.backgroundImage = "";
+        showPoints()
+        currentPlayer = 'playerX'
+        windCondition()
+}
   function windCondition(){
   if(playerXHand.length === 52){
     console.log('You win!')

@@ -11,7 +11,7 @@ body{
 }
 
 .game-container {
-    display:grid;
+    display: grid;
     grid-template-rows: 3fr 3fr 3fr 3fr 1.5fr 3fr;
     grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
     height: 100%;
