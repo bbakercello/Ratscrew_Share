@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ratscrew</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        
+        <title>
+            
+        </title>
+    </head>
+   
+    <body>
+         
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Oldenburg&family=Oswald:wght@200&family=Roboto:wght@100&family=Space+Mono&display=swap');
+         </style>
+      <div class="game-container" id="game-container">
+        <script src="app.js" async defer></script> 
+        <div class="title" >
+            <h1>Let's Play <br> Ratscrew</h1>
+            <h2 id="title"></h2>
+        </div>
+        
+        <div class="container-Y">
+            <div class="faceCard-Y-flex">
+                <p class="card-Y"ID ="hand-Y" >Computer Hand</p>
+            </div>
+            
+        </div>
+   
+    <div class="container-centerRow" id="container-centerRow">
+        <div class="centerRow-flex">
+             
+             
+            <div class="containerDeck">
+                <div id ="centerDeck" ></div>
+            </div>
+            
+        </div>
+    </div>
+        
+        <div class="container-X">
+            <div class="faceCard-X-flex">
+                <p class="card-X"ID ="hand-X" >Player Hand</p>
+            </div>  
+            
+        </div>
+
+    <div class="buttons" id="buttons">
+        <div class="buttons-flex">
+        <button Class ="resetButton" ID="resetButton">Reset</button>    
+        <button Class ="slapButton" ID="slapButton">Slap!</button>
+        <button Class ="drawXButton" ID="drawXButton">Draw</button>
+        </div>
+    </div>
+    <div class = "hiddenImageContainer">
+        <img src="https://i.imgur.com/NfpJrhB.png" ID ="C-9" class = "image">
+        <img src="https://i.imgur.com/Wg0l2hD.png"ID = "S-J" class = "image">
+        <img src="https://i.imgur.com/JIJylkb.png" ID="H-K" class = "image">
+        <img src="https://i.imgur.com/OwutCRo.png"ID = "S-Q" class = "image">
+        <img src="https://i.imgur.com/Z7t8y5i.png" ID = "H-J" class = "image">
+        <img src="https://i.imgur.com/Ri7iIZi.png" ID = "S-K" class = "image">
+        <img src="https://i.imgur.com/CitecL2.png" ID = "C-Q" class = "image">
+        <img src="https://i.imgur.com/XQZGmx3.png" ID = "D-J" class = "image">
+        <img src="https://i.imgur.com/GSQH0gm.png" ID = "D-K" class = "image">
+        <img src="https://i.imgur.com/r8zxHXx.png" ID = "D-9" class = "image">
+        <img src="https://i.imgur.com/FQf97on.png" ID = "C-7" class = "image">
+        <img src="https://i.imgur.com/6jLqrIi.png" ID = "H-Q" class = "image">
+        <img src="https://i.imgur.com/IGkKpyR.png" ID = "D-8" class = "image">
+        <img src="https://i.imgur.com/vD5eYoM.png" ID = "S-8" class = "image">
+        <img src="https://i.imgur.com/YVVEQT8.png" ID = "D-10" class = "image">
+        <img src="https://i.imgur.com/ACY0fev.png" ID = "D-7" class = "image">
+        <img src="https://i.imgur.com/3SarSCb.png" ID = "C-J" class = "image">
+        <img src="https://i.imgur.com/SW6SZjE.png" ID = "H-6" class = "image">
+        <img src="https://i.imgur.com/b055izI.png" ID = "D-Q" class = "image">
+        <img src="https://i.imgur.com/waYSDlY.png" ID = "C-A" class = "image">
+        <img src="https://i.imgur.com/FIq69JJ.png" ID = "D-3" class = "image">
+        <img src="https://i.imgur.com/zLTn6kI.png" ID = "C-5" class = "image">
+        <img src="https://i.imgur.com/Eu54vNr.png" ID = "C-3" class = "image">
+        <img src="https://i.imgur.com/idAoo2z.png" ID = "S-9" class = "image">
+        <img src="https://i.imgur.com/VwQ7B7D.png" ID = "H-4" class = "image">
+        <img src="https://i.imgur.com/PjMlqGL.png" ID = "C-2" class = "image">
+        <img src="https://i.imgur.com/SuE9JLJ.png" ID = "D-6" class = "image">
+        <img src="https://i.imgur.com/4y2s70s.png" ID = "H-3" class = "image">
+        <img src="https://i.imgur.com/Y8aWzJd.png" ID = "C-6" class = "image">
+        <img src="https://i.imgur.com/7u6z9EK.png" ID = "C-K" class = "image">
+        <img src="https://i.imgur.com/PEn5lrE.png" ID = "S-7" class = "image">
+        <img src="https://i.imgur.com/v4tL029.png" ID = "H-9" class = "image">
+        <img src="https://i.imgur.com/cp63uf1.png" ID = "H-7" class = "image">
+        <img src="https://i.imgur.com/TBXQnCU.png" ID = "C-10" class = "image">
+        <img src="https://i.imgur.com/il3naq1.png" ID = "S-10" class = "image">
+        <img src="https://i.imgur.com/v7u4lK5.png" ID = "D-5" class = "image">
+        <img src="https://i.imgur.com/BfDDMoZ.png" ID = "D-A" class = "image">
+        <img src="https://i.imgur.com/nEqcb58.png" ID = "S-4" class = "image">
+        <img src="https://i.imgur.com/eT47Mn6.png" ID = "H-8" class = "image">
+        <img src="https://i.imgur.com/sAFGStg.png" ID = "C-8" class = "image">
+        <img src="https://i.imgur.com/QBrT80r.png" ID = "S-5" class = "image">
+        <img src="https://i.imgur.com/YxvuQ1z.png" ID = "H-5" class = "image">
+        <img src="https://i.imgur.com/5rrIrap.png" ID = "D-4" class = "image">
+        <img src="https://i.imgur.com/WRxQ0Tf.png" ID = "H-10" class = "image">
+        <img src="https://i.imgur.com/68La8Ku.png" ID = "H-A" class = "image">
+        <img src="https://i.imgur.com/ZIYMjfe.png" ID = "D-2" class = "image">
+        <img src="https://i.imgur.com/QTPZm4X.png" ID = "S-3" class = "image">
+        <img src="https://i.imgur.com/yJ5hZZI.png" ID = "S-A" class = "image">
+        <img src="https://i.imgur.com/RoIkmE4.png" ID = "H-2" class = "image">
+        <img src="https://i.imgur.com/q5ipGDK.png" ID = "S-6" class = "image">
+        <img src="https://i.imgur.com/TAieXNO.png" ID = "C-4" class = "image">
+        <img src="https://i.imgur.com/14WeQqu.png" ID = "S-2" class = "image">
+    </div>  
+    <div class="status" id="gameStatus">
+        <p>Click Reset to begin the game</p>
+    </div>
+    <div class="status" id="currentPlayer">
+        <p>Game Status...</p>
+     </div>
+     <div class="status" id="roundStatus">
+        <p></p>
+     </div>
+    </div>
+    
+    </body>
+</html>

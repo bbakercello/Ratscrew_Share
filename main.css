@@ -1,0 +1,170 @@
+body{
+    font-family: 'Space Mono', monospace;
+    background-image: url('https://i.imgur.com/WfRfrO7.png');
+    background-repeat: repeat;
+}
+
+.title {
+    text-align: center;
+    grid-column: 3;
+    font-size: 20px;
+}
+
+.game-container {
+    display:grid;
+    grid-template-rows: 3fr 3fr 3fr 3fr 1.5fr 3fr;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.container-Y {
+    grid-row: 2;
+    grid-column: 3 / span 5;
+    margin: 5px;
+    text-align: center;
+    
+}
+
+.faceCard-Y-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-direction: row;
+    margin: 5px;
+    
+   
+}
+.containerDeck {
+    justify-content: flex-start;
+}
+
+.container-centerRow {
+    grid-row: 3;
+    grid-column: 3 / span 5;
+    margin: 5px;
+   
+}
+
+.centerRow-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-direction: row;
+    margin: 5px;
+
+}
+
+.container-X {
+    grid-row: 4;
+    grid-column: 3 / span 5;
+    margin: 5px;
+}
+
+.faceCard-X-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-direction: row;
+    margin: 5px 5px 0 5px;
+}
+
+.buttons {
+    grid-row: 5;
+    grid-column: 1 / span 5;
+    margin: 5px;
+    padding: 30px;
+
+}
+
+.buttons-flex {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    flex-direction: row;
+    
+    
+}
+
+.slapButton {
+    width: 60px;
+    height: 30px;
+    margin: 0px, 5px, 0px, 5px;
+
+}
+
+.drawButton {
+    width: 30px;
+    height: 30px;
+    padding: 0px, 5px, 0px, 5px;
+    
+}
+
+.card-X {
+    height: 150px;
+    width: 112.5px;
+    background: RGB(65 137 128);
+    border-radius: 2%;
+}
+
+.card-Y {
+    height: 150px;
+    width: 112.5px;
+    background: RGB(113 90 93);
+    border-radius: 2%;
+}
+.conatinerDeck {
+    max-height: 150px;
+    max-width: 112.5px;
+    object-fit: contain;
+    display: flex;
+    grid-row: 6 / span 1;
+   margin-right: 50%;
+   position: relative;
+   
+}
+
+#centerDeck {
+    height: 150px;
+    width: 112.5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.hiddenImageContainer {
+    max-height: 150px;
+    max-width: 112.5px;
+    object-fit: contain;
+    display: flex;
+    grid-row: 6 / span 1;
+   margin-right: 50%;
+   position: relative;
+   display: none;
+}
+
+.image {
+    height: 150px;
+    max-width: 112.5px;
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+#roundStatus {
+    grid-row: 6;
+    grid-column: 4;
+}
+
+#gameStatus {
+    grid-row: 6;
+    grid-column: 3;
+}
+
+#currentPlayer {
+    grid-row: 6;
+    grid-column: 1;
+}
