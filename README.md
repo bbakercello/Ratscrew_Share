@@ -11,6 +11,24 @@ generated randomly)
 - Players draws from corresponding hand into center pile
 - The drawn card determines what happens next in the game
 
+![Ratscrew](https://i.imgur.com/MQCaI33.png "Ratscrew")
+First Round
+
+
+
+![Ratscrew](https://imgur.com/MIvw0ig.png "Ratscrew")
+Face Card Rules
+
+![Ratscrew](https://i.imgur.com/Xl8aSa5.png "Ratscrew")
+Slap
+
+
+![Ratscrew](https://i.imgur.com/35LO4ZM.png "Ratscrew")
+Slap
+Win/Lose conditions
+
+https://i.imgur.com/8L3JFAG.png
+Win Conditions
 Slap Mechanic -
 
 - If two consective identical numbers or face cards (suits don't matter) are drawn in a row, the players can race to slap the hand

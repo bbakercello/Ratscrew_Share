@@ -319,43 +319,43 @@ slapButton.addEventListener('click', event => {
       }
     })
   /* Set up timer for computer to slap after 3 seconds */
-// if (match === true) {
-//     setTimeout(function(){
-//         computerSlap ();
-//     }, 3000);}
+if (match === true) {
+    setTimeout(function(){
+        computerSlap ();
+    }, 3000);}
 
-//     function computerSlap (){
-//     roundStatus.innerText = `Computer Slapped!You lose ${centerPile.length} cards`
-//         playerYHand.push(centerPile);
-//         shuffleDeck(playerYHand);
-//         centerDeck.style.backgroundImage = "";
-//         showPoints()
-//         currentPlayer = 'playerX'
-//         windCondition()
-// }
+    function computerSlap (){
+    roundStatus.innerText = `Computer Slapped!You lose ${centerPile.length} cards`
+        playerYHand.push(centerPile);
+        shuffleDeck(playerYHand);
+        centerDeck.style.backgroundImage = "";
+        showPoints()
+        currentPlayer = 'playerX'
+        windCondition()
+}
   function windCondition(){
   if(playerXHand.length === 52){
     console.log('You win!')
     showPoints()
-    resetGame()
     h1.innerText = "You win!"
+    gameStatus.innerText = "Want to play again? Hit reset!"
   }
   if(playerYHand.length === 52){
     console.log('You lose!')
     showPoints()
-    resetGame()
     h1.innerText = "You win!"
+    gameStatus.innerText = "Want to play again? Hit reset!"
   }
   if(playerXHand.length === 0){
     console.log('You lose!')
     showPoints()
-    resetGame()
     h1.innerText = "You lose!"
+    gameStatus.innerText = "Want to play again? Hit reset!"
   }
   if(playerYHand.length === 0){
     console.log('You win!')
     showPoints()
-    resetGame()
     h1.innerText = "You win!"
+    gameStatus.innerText = "Want to play again? Hit reset!"
   }
 }
