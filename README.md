@@ -10,7 +10,7 @@ This is a game of Ratscrew. The human player and computer are given 26 cards. Th
 When the player hits reset to start the game, they are instructed to hit Draw. When Draw is clicked, the computer plays their first card. Then the player clicks Draw and draws card. Computer's pile of cards is on top and the player's is on the bottom. Their number of cards are constantly updated throughout the game to see who is winning and who is losing.
 
 ## Face Card Rules
-![Ratscrew](https://i.imgur.com/2cRe05W.png "Ratscrew")
+![Ratscrew](https://imgur.com/MIvw0ig.png "Ratscrew")
 
 Throughout the game, messages are displayed at the left of the screen to show what card was drawn. If a face card is drawn, the message will show how many cards the correspoding player will lose. The number is updated once draw is clicked by the human player. 
 
@@ -32,7 +32,7 @@ I used javascript for functionality and DOM manipulation. I mostly used conditio
 ## Challenging javscript
 ![Ratscrew](https://i.imgur.com/LguTM9t.png "Ratscrew")
 
-![Ratscrew](https://i.imgur.com/yBFb1JL.png "Ratscrew")
+![Ratscrew](https://i.imgur.com/2cRe05W.png "Ratscrew")
 
 
 ## Link to Ratscrew
