@@ -298,7 +298,6 @@ function timerFunction(){
 slapButton.addEventListener('click', event => {
     // if (event.code === 'Space') {
       if(match === true){
-        console.log('win cards');
         playerXHand.push(centerPile);
         shuffleDeck(playerXHand);
         centerDeck.style.backgroundImage = "";
@@ -308,7 +307,6 @@ slapButton.addEventListener('click', event => {
         timerFunction()
       }
       else if(match === false){
-        console.log('lose cards');
         playerYHand.push(centerPile);
         shuffleDeck(playerYHand);
         centerDeck.style.backgroundImage = "";
