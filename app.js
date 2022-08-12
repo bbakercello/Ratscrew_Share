@@ -148,7 +148,7 @@ function draw(playerHand){
             if((centerPile[centerPile.length-1].identity.charAt(2))=== 'A'){
                 currentPlayerDom.innerText = "Nice! You drew an ACE. Computer loses 4 cards"
                 let xi = 0
-                while(xi<3){
+                while(xi<4){
                     centerPile.unshift(playerYHand.pop())
                     windCondition()
                     xi += 1;
@@ -157,7 +157,7 @@ function draw(playerHand){
             if((centerPile[centerPile.length-1].identity.charAt(2))=== 'K'){
                 currentPlayerDom.innerText = "You drew a King! Computer loses 3 cards"
                 let xi = 0
-                while(xi<2){
+                while(xi<3){
                     centerPile.unshift(playerYHand.pop())
                     windCondition()
                     xi += 1;
@@ -166,7 +166,7 @@ function draw(playerHand){
             if((centerPile[centerPile.length-1].identity.charAt(2))=== 'Q'){
                 currentPlayerDom.innerText = "You drew an Queen. Computer loses 2 cards"
                 let xi = 0
-                while(xi<1){
+                while(xi<2){
                     centerPile.unshift(playerYHand.pop())
                     windCondition()
                     xi += 1;
@@ -176,7 +176,7 @@ function draw(playerHand){
                 console.log('playerX got a Jack')
                 currentPlayerDom.innerText = "You drew an Jack. Computer loses a card"
                 let xi = 0
-                while(xi=0){
+                while(xi<1){
                     centerPile.push(playerYHand.pop())
                     console.log(playerYHand);
                     xi += 1;
@@ -252,7 +252,7 @@ function timerFunction(){
             if((centerPile[centerPile.length-1].identity.charAt(2))=== 'A'){
                 currentPlayerDom.innerText = "Uh oh! Computer drew an ACE. You lose 4 cards"
                 let xi = 0
-                while(xi<3){
+                while(xi<4){
                     centerPile.unshift(playerXHand.pop())
                     xi += 1;
                 }      
@@ -260,7 +260,7 @@ function timerFunction(){
             if((centerPile[centerPile.length-1].identity.charAt(2))=== 'K'){
                 currentPlayerDom.innerText = "Wow! Computer drew a King. You lose 3 cards"
                 let xi = 0
-                while (xi<2){
+                while (xi<3){
                     centerPile.unshift(playerXHand.pop())
                     cardImage()
                     xi +=1;
@@ -269,7 +269,7 @@ function timerFunction(){
             if((centerPile[centerPile.length-1].identity.charAt(2))=== 'Q'){
                 currentPlayerDom.innerText = "Wow! Computer drew a Queen. You lose 2 cards"
                 let xi = 0
-                while(xi<1){
+                while(xi<2){
                     centerPile.unshift(playerXHand.pop())
                     xi+=1
                 }   
@@ -277,7 +277,7 @@ function timerFunction(){
             if((centerPile[centerPile.length-1].identity.charAt(2))=== 'J'){
                 currentPlayerDom.innerText = "Computer drew a Jack. You lose 1 cards"
                 let xi = 0
-                while(xi=0){
+                while(xi<1){
                     centerPile.unshift(playerXHand.pop())
                     xi+=1
                 }
