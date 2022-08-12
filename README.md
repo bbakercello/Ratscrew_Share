@@ -1,7 +1,7 @@
 # Game Type: Ratscrew
 
 ![Ratscrew](https://imgur.com/1PIHDox.png "Ratscrew")
-## Rules - 
+## Rules 
 This is a game of Ratscrew. The human player and computer are given 26 cards. The goal of the game is to either have all cards in your deck or to deplete the computer's hand to 0. In each turn, the player or computer draws a single card into the center pile and puts it face up. This game relies heavily on drawing face cards. Each face card has a different level of power. If a Jack is drawn by the player, the computer draws 1 card into the bottom of the center pile. If a queen is drawn, the computer draws 2 cards into the cetner. A king equates to drawing 3 and an Ace equates to drawing 4. If two identical numbered cards are drawn on top of each other (suits do not matter), the player can slap and takes the entire center pile. The game moves quickly because the face cards hold so much power! Good luck!
 
 ## First Round
